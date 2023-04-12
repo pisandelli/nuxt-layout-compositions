@@ -6,7 +6,7 @@
    * @version 1.0.0
    */
 import { defineComponent, h } from 'vue'
-import Styles from '@/assets/styles/styles/ClusterL.module.styl'
+import Styles from '@/assets/styles/ClusterL.module.styl'
 
 export default defineComponent({
   props: {

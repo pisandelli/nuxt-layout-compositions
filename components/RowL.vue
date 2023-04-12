@@ -6,7 +6,7 @@
    */
 
 import { defineComponent, h } from 'vue'
-import Styles from '@/assets/styles/styles/RowL.module.styl'
+import Styles from '@/assets/styles/RowL.module.styl'
 
 export default defineComponent({
   props: {
