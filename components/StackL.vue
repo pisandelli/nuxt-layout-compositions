@@ -8,7 +8,7 @@
  */
 
 import { defineComponent, h } from 'vue'
-import Styles from '../assets/styles/StackL.module.styl'
+import Styles from '@/assets/styles/styles/StackL.module.styl'
 
 export default defineComponent({
   props: {

@@ -6,7 +6,7 @@
  */
 
 import { defineComponent, h } from 'vue'
-import Styles from '../assets/styles/BoxL.module.styl'
+import Styles from '@/assets/styles/BoxL.module.styl'
 
 export default defineComponent({
   props: {

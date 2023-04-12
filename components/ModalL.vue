@@ -6,7 +6,7 @@
    */
 
 import { defineComponent, h } from 'vue'
-import Styles from '../assets/styles/ModalL.module.styl'
+import Styles from '@/assets/styles/styles/ModalL.module.styl'
 
 export default defineComponent({
   props: {

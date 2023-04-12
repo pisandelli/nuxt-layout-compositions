@@ -7,7 +7,7 @@
    */
 
 import { defineComponent, h } from 'vue'
-import Styles from '../assets/styles/CenterL.module.styl'
+import Styles from '@/assets/styles/CenterL.module.styl'
 
 export default defineComponent({
   props: {
