@@ -1,6 +1,6 @@
 {
   "name": "nuxt-layout-compositions",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A library with some useful layout compositions components",
   "main": "./nuxt.config.ts",
   "type": "module",
