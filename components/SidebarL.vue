@@ -1,12 +1,12 @@
 <script lang="ts">
 /**
-   * A simple separator.
-   * @name 'RowL'
-   * @version 1.0.0
-   */
+ * A layout using sidebar
+ * @name 'SidebarL'
+ * @version 1.0.0
+ */
 
 import { defineComponent, h } from 'vue'
-import Styles from '@/assets/styles/RowL.module.styl'
+import Styles from '@/assets/styles/SidebarL.module.styl'
 
 export default defineComponent({
   props: {
@@ -15,7 +15,7 @@ export default defineComponent({
       default: 'div'
     }
   },
-  setup (props, { slots }) {
+  setup(props, { slots }) {
     return () => h(props.tag, { class: Object.values(Styles) }, slots)
   }
 })

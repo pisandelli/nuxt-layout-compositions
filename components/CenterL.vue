@@ -16,7 +16,7 @@ export default defineComponent({
       default: 'div'
     }
   },
-  setup (props, { slots }) {
+  setup(props, { slots }) {
     return () => h(props.tag, { class: Object.values(Styles) }, slots)
   }
 })

@@ -1,24 +1,27 @@
-.cluster-l
+.clusterl
   display: flex
   flex-wrap: wrap
-  gap: var(--gap, 1.5rem)
+  gap: var(--clusterl-gap, var(--lc-gap, 1.5rem))
   justify-content: flex-start
   align-items: center
 
-  &[center]
+  &[center]:not([center='false'])
     justify-content: center
 
-  &[end]
+  &[end]:not([end='false'])
     justify-content: flex-end
 
-  &[between]
+  &[between]:not([between='false'])
     justify-content: space-between
 
-  &[around]
+  &[around]:not([around='false'])
     justify-content: space-around
 
-  &[narrow]
-    gap: var(--s0, 1rem)
+  &[evenly]:not([evenly='false'])
+    justify-content: space-evenly
+
+  &[narrow]:not([narrow='false'])
+    gap: calc(var(--clusterl-gap, var(--lc-gap, 1.5rem)) * 0.666666667) // ~1rem
   
-  &[wide]
-    gap: calc(var(--gap, 1.5rem) * 2)
+  &[wide]:not([wide='false'])
+    gap: calc(var(--clusterl-gap, var(--lc-gap, 1.5rem)) * 2) // 2rem

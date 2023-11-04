@@ -1,14 +1,10 @@
-.center-l
+.centerl
   box-sizing: content-box
   margin-inline: auto
-  max-inline-size: var(--max-width, 65ch)
-  padding-inline-start: var(--gap, 1.5rem)
-  padding-inline-end: var(--gap, 1.5rem)
+  max-inline-size: var(--centerl-max-width, var(--lc-max-width, 40rem))
+  padding-inline: var(--centerl-gap, var(--lc-gap, 1.5rem))
 
-  &[center-text]
-    text-align: center
-
-  &[intrinsic]
+  &[intrinsic]:not([intrinsic='false'])
     display:flex
     flex-direction: column
     align-items: center
