@@ -4,7 +4,7 @@
  * margin between elements via their
  * common parent.
  * @name 'StackL'
- * @version 1.0.0
+ * @version 2.0.0
  */
 
 import { defineComponent, h } from 'vue'
@@ -17,7 +17,7 @@ export default defineComponent({
       default: 'div'
     }
   },
-  setup (props, { slots }) {
+  setup(props, { slots }) {
     return () => h(props.tag, { class: Object.values(Styles) }, slots)
   }
 })
