@@ -3,16 +3,17 @@
   flex-direction: column
   justify-content: flex-start
 
-  &[recursive]:not([recursive='false']) > *
+  & > *,
+  &[recursive]:not([recursive='false']) *
     margin-block: 0
 
   & > * + *,
   &[recursive]:not([recursive='false']) * + *
     margin-block-start: var(--stackl-gap, var(--lc-gap, 1.5rem))
 
-  &[compact]:not([compact='false']) > * + 
+  &[compact]:not([compact='false']) > * + *
     margin-block-start: calc(var(--stackl-gap, var(--lc-gap, 1.5rem)) / 2)
-  
+
   &[squeezed]:not([squeezed='false']) > * + *
     margin-block-start: 0
 
